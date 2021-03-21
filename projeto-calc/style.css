@@ -79,7 +79,7 @@ input {
     padding: 5px;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     flex-wrap: wrap;
 }
 
@@ -107,8 +107,8 @@ button {
 
     .calc-display {
         margin: 10px auto;
-        padding-top: 0px ;
-        height: 100px;
+  
+        height: 130px;
     }
     
     .calc {
@@ -117,6 +117,6 @@ button {
     }
 
     button {
-        width: 110px;
+        width: 90px;
     }
 }
