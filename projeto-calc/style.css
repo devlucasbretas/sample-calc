@@ -1,0 +1,122 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    padding: 30px;
+    margin: 0;
+}
+
+*{
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.calc {
+    width: 300px;
+    height: 590px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.575);
+    box-shadow: 10px 10px 20px rgba(146, 146, 146, 0.253);
+}
+
+.calc-display {
+    width: 300px;
+    height: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    background-color: rgb(245, 245, 245);
+    padding-top: 5px;
+    font-size: 20pt;
+}
+
+#oper {
+    margin: 0px 10px;
+    color: rgb(64, 72, 192);
+}
+
+#res-btn {
+    background-color: rgb(64, 72, 192);
+    color: rgb(235, 235, 235);
+}
+
+#res-btn:hover {
+    opacity: 1;
+}
+
+.num-key {
+    background-color: rgb(230, 228, 231);
+    border: none;
+    color: rgb(107, 107, 107);
+}
+
+#dispRes {
+    color: rgb(100, 98, 236);
+}
+
+#ce-btn {
+    color: rgb(241, 100, 95);
+}
+
+input {
+    border: none;
+    width: 120px;
+    height: 25px;
+    padding: 10px;
+    font-size: 15pt;
+    cursor: default;
+    text-align: right;
+    color: rgb(99, 99, 99);
+    background-color: transparent;
+}
+
+
+.calc-keyboard {
+    width: 100%;
+    height: 390px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+button {
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    margin: 1px;
+    text-decoration: none;
+    background-color: rgb(241, 232, 250);
+    border: none;
+    box-shadow: 5px 5px 15px rgba(155, 155, 155, 0.527);
+    font-size: 15pt;
+    color: rgb(44, 119, 204);
+}
+
+.calc-keyboard button:hover {
+    opacity: 0.8;
+}
+
+@media (min-width: 320px) and (max-width: 800px) {
+    body{
+        padding: 0px;
+    }
+
+    .calc-display {
+        margin: 10px auto;
+        padding-top: 0px ;
+        height: 100px;
+    }
+    
+    .calc {
+        width: 100%;
+        height: 660px;
+    }
+
+    button {
+        width: 110px;
+    }
+}

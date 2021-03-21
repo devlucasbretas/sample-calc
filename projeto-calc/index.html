@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="calc">
+            <div  class="calc-display">
+                <input readonly id="display1" type="text">
+                <p id="oper"></p>
+                <input readonly id="display2" type="text">
+                <input  id="dispRes" type="text">
+            </div>
+            <div class="calc-keyboard">
+                <button class="num-key" onclick="Calc.num7()">7</button>
+                <button class="num-key" onclick="Calc.num8()">8</button>
+                <button class="num-key" onclick="Calc.num9()">9</button>
+                <button class="num-key" onclick="Calc.num4()">4</button>
+                <button class="num-key" onclick="Calc.num5()">5</button>
+                <button class="num-key" onclick="Calc.num6()">6</button>
+                <button class="num-key" onclick="Calc.num1()">1</button>
+                <button class="num-key" onclick="Calc.num2()">2</button>
+                <button class="num-key" onclick="Calc.num3()">3</button>
+                <button onclick="Calc.soma()">+</button>
+                <button class="num-key" onclick="Calc.num0()">0</button>
+                <button onclick="Calc.subtrai()">-</button>
+                <button onclick="Calc.multi()">x</button>
+                <button id="ce-btn" onclick="Calc.limpar()">C</button>
+                <button id="res-btn" onclick="Calc.mostraRes()">=</button>
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
